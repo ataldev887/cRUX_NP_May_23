@@ -1,0 +1,19 @@
+package lecture17;
+
+public class power {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int a =5;
+		int b=3;
+System.out.println(pow(a,b));
+	}
+	public static int pow(int a, int b) {
+		if(b==0) {
+			return 1;
+		}
+		int p=pow(a,b-1);
+		return p*a;
+	}
+
+}
